@@ -4,67 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seletores avançados</title>
-    <link rel="icon" type="image/png" href="css.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Transitions CSS</title>
 </head>
 
 <body>
+    <!-- Transições com CSS -->
+
+    <header id="topo">
+        <div class="logo">
+            <div class="simbolo"></div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Empresa</a> </li>
+                <li class="submenu">
+                    <a href="#">Serviços</a>
+
+                    <ul class="sub">
+                        <li><a href="#">Banho e Tosa</a></li>
+                        <li><a href="#">Vacinação</a></li>
+                        <li><a href="#">Venda de Ração</a></li>
+                        <li><a href="#">Castração</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Contato</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="conteudo">
+        <h2>Entendendo as time-functions</h2>
+        <input type="checkbox" id="acionar">
+        <div class="carros">
+            <div class="car">
+                linear
+                <img src="car.png" alt="carro">
+            </div>
+            <div class="car">
+                Ease
+                <img src="car.png" alt="carro">
+            </div>
+            <div class="car">
+                Ease-in
+                <img src="car.png" alt="carro">
+            </div>
+            <div class="car">
+                Ease-out
+                <img src="car.png" alt="carro">
+            </div>
+            <div class="car">
+                Personalizado
+                <img src="car.png" alt="carro">
+            </div>
+        </div>
+
+        <div class="galeria">
+            <div class="foto">
+                <img src="inseto.png" alt="inseto">
+            </div>
+        </div>
 
 
-    <h1 class="titulo-destaque">
-        Titulo em Destaque
-    </h1>
-
-
-
-    <nav class="menu">  
-        <ul>
-            <li>Home</li>
-            <li>Empresa</li>
-            <li>Serviços</li>
-            <li>Produtos</li>
-            <li>Trabalhe Conosco</li>
-            <li>Contato</li>
-        </ul>
-    </nav>
-
-
-    <div>
-        <ol class="lista">
-            <li>Primeiro Elemento</li>
-            <li>Segundo Elemento</li>
-            <li>Terceiro Elemento</li>
-            <li>Quarto Elemento</li>
-            <li>Quinto Elemento</li>
-        </ol>
-    </div>
-
-    <h1 class="titulo">Seletores avançados no CSS</h1>
-
-    <p>Os seletores avançados do CSS, nos auxiliam a chamar determinados com base em sua posição.<a href="#"> VEJA MAIS DETALHES</a></p>
-
-
-    <p>Sem ter que adicionar classes ou id extras. Mantendo a estrutura de tags do HTML.
-        <strong>
-            <a href="#"> VEJA MAIS DETALHES</a>
-        </strong>
-    </p>
-
-    <h2 class="titulo">Pseudo Elementos</h2>
-    <div id="destaque">
-        <p>Pseudo Elementos no CSS, na prática é como se criassemos um novo elemento dentro do HTML, mas via CSS</p>
-    </div>
-    <p>Já as pseudo classes, nos auxiliam a chamar elementos bem especificos do HTML</p>
-
-    <h2 class="titulo">BEFEORE E AFTER</h2>
-
-    <div>
-        <p>Os pseudo elementos BEFORE e AFTER, são muito utilizados para cirar efeitos visuais em uma interface</p>
-    </div>
-
-    <p>Parágrafo de exemplo</p>
-
+    </section>
 </body>
 
 </html>
